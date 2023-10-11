@@ -3478,7 +3478,7 @@ html.with-fancybox body.hide-scrollbar {
   }
 
   .no-webp .menu__body-inner{
-    background: url("../img/backgrounds/body-right.png") right 0 repeat-y; }
+    background: url("../img/backgrounds/body-right.png") right 0 repeat-y #fff; }
 
   .menu__body-inner {
     max-width: 90vw;
@@ -3500,7 +3500,6 @@ html.with-fancybox body.hide-scrollbar {
     grid-gap: 30px;
     -webkit-transition: right 0.5s ease-in-out;
     transition: right 0.5s ease-in-out;
-    background-color: #fff;
   }
 
   .menu-open .menu__body-inner {
@@ -3624,5 +3623,5 @@ html.with-fancybox body.hide-scrollbar {
 
 @media (max-width: 47.99875em){
 
-  .webp .menu__body-inner{ background: url(../img/backgrounds/body-right.webp) right 0 repeat-y; }
+  .webp .menu__body-inner{ background: url(../img/backgrounds/body-right.webp) right 0 repeat-y #fff; }
 }
