@@ -208,6 +208,7 @@ body {
 .blurred-img {
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .blurred-img::before {

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231012114042" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231012141514" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,10 +23,40 @@
 			align-items: center;
 			justify-content: center;
 		}
+
+		.loader {
+			max-width: 73.1rem;
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		.svg_logo {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			transition: 1s all;
+		}
+
+		.svg_logo.animate-logo {
+			left: 0;
+			top: 18px;
+			transform: translate(0, 0);
+		}
 	</style>
 	<script>
+		let html = document.querySelector('html')
+		html.classList.add('lock')
 		window.addEventListener('load', function() {
-			document.querySelector('.pre-loader').style.display = 'none';
+			let logo = document.querySelector('.svg_logo')
+			let preLoader = document.querySelector('.pre-loader')
+			logo.classList.add('animate-logo')
+			setTimeout(function() {
+				logo.style.display = 'none'
+				preLoader.remove()
+				html.classList.remove('lock')
+			}, 1100)
 		})
 	</script>
 </head>
@@ -34,11 +64,11 @@
 <body>
 	<div class="pre-loader">
 		<div class="loader">
-			<img src="img/logos/site-logo.svg" width="266" height="24">
+			<img src="img/logos/site-logo.svg" width="266" height="24" class="svg_logo">
 		</div>
 	</div>
 	<div class="wrapper">
-		<header class="header" data-scroll="140" data-scroll-show>
+		<header class="header" data-scroll data-scroll-show>
 			<div class="header__container">
 				<a href="/" class="header__logo">
 					<img src="img/logos/site-logo.svg" width="266" height="24" alt="Site logo" class="header__logo-img">
@@ -613,7 +643,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231012114042"></script>
+	<script src="js/app.min.js?_v=20231012141514"></script>
 </body>
 
 </html>
