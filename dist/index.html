@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231012144113" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231012153714" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
 		}
 
 		.loader {
-			max-width: 1170px;
+			max-width: 1200px;
 			width: 100%;
 			height: 100%;
 			position: relative;
@@ -52,6 +52,7 @@
 			let logo = document.querySelector('.svg_logo')
 			let preLoader = document.querySelector('.pre-loader')
 			logo.classList.add('animate-logo')
+			window.scrollTo(0, 0);
 			setTimeout(function() {
 				logo.style.display = 'none'
 				preLoader.remove()
@@ -286,10 +287,11 @@
 					<div class="superTitle __container _mb-15">
 						About me
 					</div>
-					<div class="__container _mb-45">
-						<p>Hello I am IT professional with 10+ years experience in Web developing</p>
-						<p>I specialize in creating front-end applications and websites using WordPress.</p>
-						<p>I have experience in creating a team to develop projects.</p>
+					<div class="bio__text __container _mb-45">
+						<p>Hi to all! Nice to see you on my webpage!</p>
+						<p>My name is Oleksii and I am IT professional code maker.</p>
+						<p>My experience in web developing already reached 10 years!</p>
+						<p>My personal goal is to became a good front-end specialist, in a same time I used to create different websites from the scratch, as example by using WordPress CMS.</p>
 					</div>
 					<div class="achievements __container _mb-30" data-watch>
 						<div class="achievements__item">
@@ -643,7 +645,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231012144113"></script>
+	<script src="js/app.min.js?_v=20231012153714"></script>
 </body>
 
 </html>
