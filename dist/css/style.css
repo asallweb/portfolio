@@ -513,7 +513,12 @@ body {
 }
 
 .hero {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  height: calc(100vh - 100px);
+}
+
+.hero__slide img {
+  max-height: calc(100vh - 150px);
 }
 
 .bio {
@@ -533,7 +538,7 @@ body {
   position: relative;
   padding-top: 80px;
   padding-bottom: 40px;
-  margin-top: 90px;
+  margin-top: 15px;
 }
 
 .bio__tech-list {
@@ -3379,7 +3384,7 @@ html.with-fancybox body.hide-scrollbar {
   .portfolio {
     padding: 30px 15px;
     grid-gap: 15px;
-        grid-template-areas: "small-1  accent-1 accent-1 accent-2 accent-2  small-2" "small-3  accent-1 accent-1 accent-2 accent-2  small-4" "small-5  small-6  small-7  small-8  small-9   small-10" "accent-5 accent-3 accent-3 accent-4 accent-4  accent-8" "small-11 accent-3 accent-3 accent-4 accent-4  small-12" "accent-6 accent-6 small-13 small-14 accent-7  accent-7" "accent-6 accent-6 small-15 small-16 accent-7  accent-7" "accent-9 accent-9 accent-10 accent-11 accent-12 accent-12";
+        grid-template-areas: "small-1  accent-1 accent-1 accent-2 accent-2  small-2" "small-3  accent-1 accent-1 accent-2 accent-2  small-4" "small-5  small-6  small-7  small-8  small-9   small-10" "accent-5 accent-3 accent-3 accent-4 accent-4  accent-8" "small-11 accent-3 accent-3 accent-4 accent-4  small-12" "accent-6 accent-6 small-13 small-14 accent-7  accent-7" "accent-6 accent-6 small-15 small-16 accent-7  accent-7" "accent-9 accent-9 accent-10 accent-11 accent-12 accent-12" "accent-9 accent-9 . 				 . 				 accent-12 accent-12";
   }
 }
 
@@ -3515,6 +3520,11 @@ html.with-fancybox body.hide-scrollbar {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 76%;
+  }
+
+  .hero {
+    height: auto;
+    margin-bottom: 40px;
   }
 
   .bio {

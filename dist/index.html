@@ -3,18 +3,42 @@
 
 <head>
 	<title>Oleksii Strokan Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231011143859">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231012114042" />
+	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		.pre-loader {
+			background-color: #fff;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: 999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+	<script>
+		window.addEventListener('load', function() {
+			document.querySelector('.pre-loader').style.display = 'none';
+		})
+	</script>
 </head>
 
 <body>
+	<div class="pre-loader">
+		<div class="loader">
+			<img src="img/logos/site-logo.svg" width="266" height="24">
+		</div>
+	</div>
 	<div class="wrapper">
-		<header class="header" data-scroll="30" data-scroll-show>
+		<header class="header" data-scroll="140" data-scroll-show>
 			<div class="header__container">
 				<a href="/" class="header__logo">
 					<img src="img/logos/site-logo.svg" width="266" height="24" alt="Site logo" class="header__logo-img">
@@ -589,7 +613,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231011143859"></script>
+	<script src="js/app.min.js?_v=20231012114042"></script>
 </body>
 
 </html>
