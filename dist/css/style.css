@@ -3,49 +3,9 @@
 @font-face {
   font-family: Roboto;
   font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
-  src: url("../fonts/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
-  src: url("../fonts/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
-  src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
 }
 
 @font-face {
@@ -210,6 +170,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -239,34 +200,6 @@ body {
 
 .blurred-img.loaded img {
   opacity: 1;
-}
-
-@-webkit-keyframes pulse-opacity {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes pulse-opacity {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
 .blurred-img__hover {
@@ -376,6 +309,34 @@ body {
             box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulse-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -3715,6 +3676,10 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 @media (max-width: 47.99875em) {
+  .blurred-img__hover {
+    display: none;
+  }
+
   .safari-app-head {
     padding: 8px 14px;
     grid-gap: 6px;
