@@ -5266,7 +5266,7 @@
             grabCursor: true,
             centeredSlides: true,
             coverflowEffect: {
-                rotate: 50,
+                rotate: 10,
                 stretch: 0,
                 depth: 220,
                 modifier: 1,
